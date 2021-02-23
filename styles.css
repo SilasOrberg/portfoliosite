@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+}
+
+.all__content {
+    background-color: rgb(253, 253, 253);
+}
+
+.logo {
+    font-family: Anton;
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li, a {
+    display: inline-block;
+    font-family: "Anton", sans serif;
+    font-size: 16px;
+    padding: 0.4rem;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    padding-top: 5%;
+}
+
+.bio__text {
+    display: flex;
+    align-items: center;
+}
+
+.bio__text p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.bio__image img {
+    border-radius: 50%;
+    width: 60%;
+}
+
+.bio__image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project__container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem 0;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project__header {
+    text-align: center;
+    padding-top: 4rem;
+}
